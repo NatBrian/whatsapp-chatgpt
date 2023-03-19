@@ -69,10 +69,6 @@ def send_msg(msg, receiver_number):
 def ping():
     return "pong", 200
 
-@app.route("/users_chat_history", methods=["GET"])
-def get_users_chat_history():
-    return users_chat_history, 200
-
 @app.route("/users_chat_history", methods=["DELETE"])
 def delete_users_chat_history():
     # reset users_chat_history
